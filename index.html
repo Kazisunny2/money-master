@@ -25,8 +25,8 @@
           <h1 class="text-center text-2xl font-medium mt-14">Income</h1>
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">income:</h3>
-            <input
-              class="border block border-gray-400 rounded w-64 px-2 mx-6"
+            <input id="income-input"
+              class="border block border-gray-400 rounded w-40 px-2 mx-6"
               type="text"
             />
           </div>
@@ -36,40 +36,40 @@
           <h1 class="text-center text-2xl font-medium mt-8">Expenses</h1>
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">Food:</h3>
-            <input
-              class="border block border-gray-400 rounded w-64 px-2 mx-10"
+            <input id="food-input"
+              class="border block border-gray-400 rounded w-40 px-2 mx-10"
               type="text"
             />
           </div>
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">Rent:</h3>
-            <input
-              class="border block border-gray-400 rounded w-64 px-2 mx-11"
+            <input id="rent-input"
+              class="border block border-gray-400 rounded w-40 px-2 mx-11"
               type="text"
             />
           </div>
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">Clothes:</h3>
-            <input
-              class="border block border-gray-400 rounded w-64 px-2 mx-6"
+            <input id="clothes-input"
+              class="border block border-gray-400 rounded w-40 px-2 mx-6"
               type="text"
             />
           </div>
         </div>
-        <button
+        <button id="calculate-button"
           class="bg-sky-600 px-4 rounded py-2 text-white font-medium mt-6 mx-80"
         >
           Calculate
         </button>
         <div class="text-center text-2xl font-medium mt-4">
-          <h1>Total Expenses:<span>00</span></h1>
-          <h1>Balance:<span>00</span></h1>
+          <h1>Total Expenses:<span  id="total-expense">00</span></h1>
+          <h1>Balance:<span id="total-balance">00</span></h1>
         </div>
         <!-- save -->
        <div class="flex justify-center">
         <div class="flex flex-wrap mt-6 mx-14">
             <h3 class="font-normal">Save:</h3>
-            <input
+            <input id="save-input"
               class="border block border-gray-400 rounded w-40 px-2 mx-6"
               type="text"
             />
