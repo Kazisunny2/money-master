@@ -9,26 +9,28 @@
   </head>
   <body>
     <header>
-      <h1 class="font-bold text-cyan-600 text-5xl text-center mt-8">
+      <h1 class="font-bold text-cyan-600 xl:text-5xl lg:text text-center mt-8">
         Roden Boys Bank
       </h1>
     </header>
-    <main class="grid grid-cols-2 gap-20 mt-10 mx-40">
+    <main class="xs:grid-cols-1 lg:grid grid-cols-2 gap-20 mt-10 mx-20
+    ">
       <section>
         <div>
           <img src="matir-bank.jpg" alt="" />
         </div>
       </section>
-      <section class="bg-auto bg-slate-200 block">
+      <section class=" block bg-no-repeat bg-cover bg-center bg-slate-200 xs:bg-slate-300 mx-auto">
         <!-- Income -->
         <div>
           <h1 class="text-center text-2xl font-medium mt-14">Income</h1>
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">income:</h3>
             <input id="income-input"
-              class="border block border-gray-400 rounded w-40 px-2 mx-6"
+              class="border block border-gray-400 rounded w-40 px-2 mx-4"
               type="text"
             />
+            <p id="error-input"></p>
           </div>
         </div>
         <!-- Expenses -->
@@ -37,53 +39,53 @@
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">Food:</h3>
             <input id="food-input"
-              class="border block border-gray-400 rounded w-40 px-2 mx-10"
+              class="border block border-gray-400 rounded w-40 px-2 mx-4 "
               type="text"
             />
           </div>
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">Rent:</h3>
             <input id="rent-input"
-              class="border block border-gray-400 rounded w-40 px-2 mx-11"
+              class="border block border-gray-400 rounded w-40 px-2 mx-4"
               type="text"
             />
           </div>
           <div class="flex justify-center mt-6 mx-14">
             <h3 class="font-normal">Clothes:</h3>
             <input id="clothes-input"
-              class="border block border-gray-400 rounded w-40 px-2 mx-6"
+              class="border block border-gray-400 rounded w-40 px-2 mx-4"
               type="text"
             />
           </div>
         </div>
         <button id="calculate-button"
-          class="bg-sky-600 px-4 rounded py-2 text-white font-medium mt-6 mx-80"
+          class="bg-sky-600 px-4 rounded py-2 text-white font-medium mt-6 text-center w-40 mx-14 lg:mx-80"
         >
           Calculate
-        </button>
+        </button class= xs:flex>
         <div class="text-center text-2xl font-medium mt-4">
           <h1>Total Expenses:<span  id="total-expense">00</span></h1>
           <h1>Balance:<span id="total-balance">00</span></h1>
         </div>
         <!-- save -->
        <div class="flex justify-center">
-        <div class="flex flex-wrap mt-6 mx-14">
+        <div class="flex flex-wrap mt-6 ">
             <h3 class="font-normal">Save:</h3>
             <input id="save-input"
-              class="border block border-gray-400 rounded w-40 px-2 mx-6"
+              class="border block border-gray-400 rounded w-24  mx-2"
               type="text"
             />
-            <h1 class="text-2xl font-medium">%</h1>
+            <h1 class="text-2xl font-medium ">%</h1>
           </div>
-          <button
-          class="bg-sky-600 px-4 rounded py-2 text-white font-medium mt-6 "
+          <button id="save-button"
+          class="bg-sky-600 px-4 rounded py-2 text-white font-medium mt-6 mx-6 mr-24 "
         >
           Save
         </button>
        </div>
        <div class="text-center text-2xl font-medium mt-4">
-           <h1>Saving Amount:<span>00</span></h1>
-           <h1>Remaining Balance:<span>00</span></h1>
+           <h1>Saving Amount:<span id="saving-amount">00</span></h1>
+           <h1>Remaining Balance:<span id="remaining-balance">00</span></h1>
        </div>
         </div>
       </section>
